@@ -1,58 +1,75 @@
-Welcome to The Colony!
+# The Colony – Text-Based Horror Survival RPG
 
-This game is a horror survival game.
+The Colony is a text-based horror survival RPG written in Java.  
+You explore a hostile facility room by room, fight monsters, manage your inventory, and solve puzzles using text commands.
 
-This program uses json, but it is not hard to use.
+## Tech Stack
 
-Gameplay
+- Java
+- JSON for storing game data (rooms, monsters, items)
+- Console-based UI
 
-Commands:
--Movement: Use N (North), S (South), E (East), W (West) to navigate through rooms.
--Inventory: Type I to view your inventory.
--Examine Monster: Type Examine Monster to examine monsters in the current room.
--Pickup Item: Type Pickup {item} to pick up an item from the room.
--Explore Room: Type Look to explore the current room.
--Solve Puzzle: Type Solve to attempt solving a puzzle in the room.
--View Stats: Type Stats to view your character's statistics.
--Commands: Type Commands to view all available commands.
--Restart: Type Restart to restart the game.
--Exit: Type Exit to exit the game.
+## How to Run
 
-Combat:
--Encounter monsters in rooms.
--Choose to attack or ignore a monster.
--Flee combat by typing Flee.
--Your actions and the monster's actions are turn-based.
--Inventory Management
--View and interact with your inventory during the game.
--Use commands like Explore, Drop, Equip, Un-equip, and Consume to manage items.
+1. Clone the repository:
+   ```bash
+   git clone <this-repo-url>
+   cd the-colony
+2. Open the project in your IDE (IntelliJ IDEA, VS Code with Java, etc.).
+3. Build the project.
+4. Run the Main class (or the class that contains public static void main(String[] args)).
+
+## Gameplay
+
+### Movement
+
+Use the following commands to move between rooms:
+
+- N – move north  
+- S – move south  
+- E – move east  
+- W – move west  
+
+The game tracks whether you have visited a room before.
+
+### Core Commands
+
+- Look – explore the current room  
+- I – view your inventory  
+- Stats – view your character’s statistics  
+- Commands – view all available commands  
+- Restart – restart the game  
+- Exit – exit the game  
+
+### Monsters & Combat
+
+- Examine Monster – examine monsters in the current room  
+- When you encounter a monster, you can choose to attack or ignore it.  
+- Combat is turn-based: you and the monster take turns acting.  
+- Attack – engage the monster in combat  
+- Flee – attempt to escape from combat  
 
 Notes:
 
-Room Visitation:
-The game tracks whether you have visited a room before.
+- Choosing to ignore a monster can prevent it from respawning in some scenarios.
 
-Combat:
--Engage in combat with monsters using the Attack command.
--Choose to ignore a monster to prevent it from respawning.
+### Inventory Management
 
-Inventory:
--Manage your inventory using various commands.
--Equip and use items strategically.
+- Pickup {item} – pick up an item from the room  
+- Explore – inspect the room for interactive objects and items  
+- Drop – drop an item from your inventory  
+- Equip / Un-equip – manage equipment  
+- Consume – use consumable items (healing, buffs, etc.)
 
-Puzzles:
--Solve puzzles in rooms using the Solve command.
+Use your inventory strategically to survive fights and solve encounters.
 
-Restart:
--Use the Restart command to restart the game.
+### Puzzles
 
-Contributing
--If you would like to contribute to the development of this game, feel free to submit pull requests or open issues on the GitHub repository.
+- Solve – attempt to solve a puzzle in the current room.  
 
-Enjoy the game!
+Some rooms contain unique puzzles that must be solved in order to progress.
 
-Here's the default map:
-
+### Default Map
  ____________________
 |     | 19  | 18    |
 |_____|_____|_______|______________
@@ -74,3 +91,15 @@ Here's the default map:
        |______|_______|_____|
        |   8  |  1/2  |  8  |
        |______|_______|_____|
+
+## Contributing
+
+This project was originally developed as a team project for a software development course.  
+I contributed across multiple parts of the codebase, including room exploration, combat flow, inventory interactions, and general game logic.
+
+If you would like to contribute to the development of this game, feel free to:
+
+- Open issues for bugs or feature ideas  
+- Submit pull requests with improvements or new content  
+
+Enjoy the game!
