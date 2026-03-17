@@ -13,7 +13,7 @@ You explore a hostile facility room by room, fight monsters, manage your invento
 
 1. Clone the repository:
    ```bash
-   git clone <this-repo-url>
+   git clone https://github.com/khoatran3005/The_colony.git
    cd the-colony
 2. Open the project in your IDE (IntelliJ IDEA, VS Code with Java, etc.).
 3. Build the project.
